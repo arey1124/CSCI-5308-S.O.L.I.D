@@ -45,4 +45,12 @@ public class Calculator {
         }
         return true;
     }
+
+    public int modulo(int a, int b) {
+        return a % b;
+    }
+
+    public int powerOfTwo(int exponent) {
+        return (int) Math.pow(2, exponent);
+    }
 }

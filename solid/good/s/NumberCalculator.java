@@ -35,7 +35,8 @@ public class NumberCalculator {
     }
 
     public boolean isPalindrome(String text) {
-        String reversed = new StringBuilder(text).reverse().toString();
+        StringBuilder builder = new StringBuilder(text);
+        String reversed = builder.reverse().toString();
         return text.equals(reversed);
     }
 }

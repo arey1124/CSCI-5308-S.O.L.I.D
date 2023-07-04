@@ -25,6 +25,14 @@ public class Calculator {
         return Math.pow(base, exponent);
     }
 
+    public int modulo(int a, int b) {
+        return a % b;
+    }
+
+    public int powerOfTwo(int exponent) {
+        return (int) Math.pow(2, exponent);
+    }
+
     public int factorial(int n) {
         if (n == 0)
             return 1;
@@ -53,7 +61,8 @@ public class Calculator {
     }
 
     public boolean isPalindrome(String text) {
-        String reversed = new StringBuilder(text).reverse().toString();
+        StringBuilder builder = new StringBuilder(text);
+        String reversed = builder.reverse().toString();
         return text.equals(reversed);
     }
 
@@ -96,10 +105,12 @@ public class Calculator {
     }
 
     public void logOperation(String operation) {
+        // Logging code here
         System.out.println(operation);
     }
 
     public void logError(String errorMessage) {
+        // Error logging code here
         System.out.println(errorMessage);
     }
 }
